@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Comforter', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(115deg, pink, rgb(91, 112, 175));
+}
+
+
+.content {
+    display: flex;
+}
+
+
+
+.number__top {
+
+    top: 50px;
+    width: 400px;
+    height: 400px;
+    margin-left: 700px;
+
+    animation-name: number__top;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    position: relative;
+    z-index: 100;
+}
+
+@keyframes number__top {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+.number__bottom {
+    margin-left: 700px;
+    margin-top: -100px;
+    width: 450px;
+    height: 450px;
+    animation-name: number__bottom;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+@keyframes number__bottom {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.content__text {
+    margin-top: 350px;
+    margin-left: -450px;
+    text-align: center;
+
+}
+
+.text__headline {
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+
+}
+
+.text__letter {
+    font-family: 'Comforter', cursive;
+    font-size: 87px;
+    margin-left: -950px;
+
+
+}
+
+.main {
+    margin-left: 450px;
+    margin-top: -150px;
+}
+
+.text__heading {
+    font-family: 'Comforter', cursive;
+    font-size: 78px;
+    text-align: center;
+    animation-name: text__heading;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+}
+
+@keyframes text__heading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
